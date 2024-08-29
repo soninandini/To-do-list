@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b8ecf0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1{
+    color: #2c3e50;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #e73131;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+ul#todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#todoList li {
+    background-color: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+}
+
+ul#todoList li:hover {
+    background-color: #f9f9f9;
+}
+
+ul#todoList li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+ul#todoList li span {
+    margin-left: 10px;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+ul#todoList li span:hover {
+    color: #c0392b;
+}
+
+ul#todoList li span.checked {
+    color: #7f8c8d;
+}
+ul#todoList li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+ul#todoList li:hover {
+    background: #ddd;
+  }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Categories</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <form id="todoForm">
+        <input type="text" id="task" placeholder="Enter your task" required>
+        <select id="category" required>
+            <option value="">Select category</option>
+            <option value="Personal">Personal</option>
+            <option value="Books to read">Books to read</option>
+            <option value="To Buy">To Buy</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+
+    
+    <ul id="todoList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
