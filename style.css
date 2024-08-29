@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #b8ecf0;
@@ -7,30 +6,39 @@ body {
     color: #333;
 }
 
-h1{
+h1 {
     color: #2c3e50;
     text-align: center;
+    font-size: 2rem; 
 }
 
 form {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 input[type="text"] {
     padding: 10px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
 }
 
 select {
     padding: 10px;
+    width: 100%;
+    max-width: 200px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    margin-bottom: 10px; 
+    box-sizing: border-box;
 }
 
 button[type="submit"] {
@@ -40,6 +48,9 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    max-width: 120px;
+    box-sizing: border-box;
 }
 
 button[type="submit"]:hover {
@@ -73,7 +84,7 @@ ul#todoList li input[type="checkbox"] {
 ul#todoList li span {
     margin-left: 10px;
     color: #e74c3c;
-    font-size: 18px;
+    font-size: 1rem; 
 }
 
 ul#todoList li span:hover {
@@ -83,11 +94,45 @@ ul#todoList li span:hover {
 ul#todoList li span.checked {
     color: #7f8c8d;
 }
+
 ul#todoList li:nth-child(odd) {
     background: #f9f9f9;
-  }
-  
-  /* Darker background-color on hover */
+}
+
+
 ul#todoList li:hover {
     background: #ddd;
-  }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"],
+    select,
+    button[type="submit"] {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    ul#todoList li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul#todoList li input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+
+    ul#todoList li span {
+        margin-left: 0;
+    }
+}
